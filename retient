@@ -1,0 +1,4 @@
+<?php
+		include "print_database.php";
+			my_print_database();
+?>

@@ -1,0 +1,43 @@
+PAGE d'inscription
+<HTML>
+<HEAD>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link rel="stylesheet" type="text/css" href="form.css">
+</HEAD>
+<BODY>
+<div class ="formul">
+<form id="form" action="../inscr.php" method="POST">
+<p class="titre"> Contact details</p>
+<fieldset id="contac">
+  <p id="civilite"><label>*Title : </label>
+    <input type="radio" name="title" value="Mr." />Mr.
+    <input type="radio" name="title" value="Mrs" />Mrs.
+  </p>
+  <label>*Name : </label>
+    <input type="text" name="login" size="30" /><br />
+   <label>*Password : </label>
+    <input type="password" name="passwd" size="30" /><br />
+  <label> Address : </label>
+    <input type="text" name="adress" size="30" /><br />
+  <label> Postcode : </label>
+    <input type="text" name="postcode" size="30" /><br />
+  <label> City : </label>
+    <input type="text" name="city" size="30" /><br />
+  <label> Country : </label>
+    <select name="pays">
+      <option value="france">France</option>
+      <option value="belgium">Belgium</option>
+      <option value="switzerland">Switzerland</option>
+    </select>
+<p id="interets"><label> Favourite holidays : </label>
+    <input type="checkbox" name="interets[]" value="sea" />Sea
+    <input type="checkbox" name="interets[]" value="moutain" />Mountain
+    <input type="checkbox" name="interets[]" value="adventure" />Adventure
+    <input type="checkbox" name="interets[]" value="sport" />Sport
+      <input type="checkbox" name="interets[]" value="green" />Green
+  </p>
+  <input type="submit" name="submit" value="OK" />
+</form>
+</div>
+</BODY>
+</HTML>
